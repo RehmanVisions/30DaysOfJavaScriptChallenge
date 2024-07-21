@@ -18,11 +18,28 @@ const assignBoolean = true
 let number = 2;
 let string = "string"
 let boolean = false;
-let obj {
-    name = "Object"
-    dataTypeIn = "JavaScript"
+let obj = {
+    objName : "name",
+    dataTypeIn : "JavaScript"
 }
-let array = 
+let array = ["thisIsAnArray", 123]
 
-console.table([assignNumber, assignString, assignBoolean])
-console.table([typeof assignNumber, typeof assignString, typeof assignBoolean])
+// console.table([assignNumber, assignString, assignBoolean, number, string, boolean, obj, array])
+// console.table([typeof assignNumber, typeof assignString, typeof assignBoolean, typeof number, typeof string, typeof boolean, typeof obj, typeof array])
+
+// Activity 4: Reassigning Variables
+
+// Task 5: Declare a variable using let, assign it an initial value, reassign a new value, and log both values to the console.
+let initialValue = "Initial Value";
+console.log(initialValue);
+initialValue = "New Value";
+console.log(initialValue);
+
+// Activity 5: Understanding const
+
+// Task 6: Try reassigning a variable declared with const and observe the error.
+
+const constDeclared = "const declared";
+console.log(constDeclared);
+const constDeclared = "new const declared";
+console.log(constDeclared);
