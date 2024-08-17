@@ -41,67 +41,67 @@ function largestOfThree(a, b, c) {
 
 // Task 4: Write a program that uses a switch case to determine the day of the week based on a number (1-7) and log the day name to the console.
 
-const day = 7
+const day = 7;
 
 switch (day) {
-    case 1:
-        console.log("Monday");
-        break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 3:
-        console.log("Wednesday");
-        break;
-    case 4:
-        console.log("Thursday");
-        break;
-    case 5:
-        console.log("Friday");
-        break;
-    case 6:
-        console.log("Saturday");
-        break;
-    case 7:
-        console.log("Sunday");
-        break;
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
 
-    default:
-        console.log("default:Funday");
-        break;
+  default:
+    console.log("default:Funday");
+    break;
 }
 
 // Task 5: Write a program that uses a switch case to assign a grade ('A', 'B', 'C', 'D', 'F') based on a score and log the grade to the console.
 
 function assignGrades(score) {
-    switch (true) {
-        case (score >= 90):
-            console.log("Grade: A");
-            break;
-        case (score >= 80):
-            console.log("Grade: B");
-            break;
-        case (score >= 70):
-            console.log("Grade: C");
-            break;
-        case (score >= 60):
-            console.log("Grade: D");
-            break;
-    
-        default:
-            console.log("Grade: F");
-            break;
-    }
+  switch (true) {
+    case score >= 90:
+      console.log("Grade: A");
+      break;
+    case score >= 80:
+      console.log("Grade: B");
+      break;
+    case score >= 70:
+      console.log("Grade: C");
+      break;
+    case score >= 60:
+      console.log("Grade: D");
+      break;
+
+    default:
+      console.log("Grade: F");
+      break;
+  }
 }
 
-assignGrades(91)
+assignGrades(91);
 
 // Activity 4: Conditional (Ternary) Operator
 // Task 6: Write a program that uses the ternary operator to check if a number is even or odd and log the result to the console.
 
-function oddOrEven(num){
-   const result = (num % 2 === 0) ? "Even" : "Odd";
-   console.log(result);  
+function oddOrEven(num) {
+  const result = num % 2 === 0 ? "Even" : "Odd";
+  console.log(result);
 }
 
 // oddOrEven(7);
@@ -109,12 +109,12 @@ function oddOrEven(num){
 // Activity 5: Combining Conditions
 // Task 7: Write a program to check if a year is a leap year using multiple conditions (divisible by 4, but not 100 unless also divisible by 400) and log the result to the console.
 
-function checkLeapYear(year){
-    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
-        console.log(`${year} is a leap year`);
-    } else {
-        console.log(`${year} is not a leap year`);
-    }
+function checkLeapYear(year) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    console.log(`${year} is a leap year`);
+  } else {
+    console.log(`${year} is not a leap year`);
+  }
 }
 
-checkLeapYear(2028)
+checkLeapYear(2028);
